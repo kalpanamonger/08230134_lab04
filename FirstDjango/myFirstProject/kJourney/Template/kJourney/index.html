@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Learning Journey</title>
+</head>
+<body>
+    <h1>My Learning Journey</h1>
+
+    <!-- About Me Section -->
+    <section>
+        <h2>About Me</h2>
+        <p><strong>Name:</strong> Kalpana Monger</p>
+        <p><strong>Education:</strong> Completed high school from Sarpang Central School</p>
+        <p><strong>Current Studies:</strong> Pursuing Bachelor's in IT</p>
+        <p><strong>Hobbies:</strong> I love reading books</p>
+    </section>
+
+    <!-- Learning Journey Section -->
+    <section>
+        {% for journey in journeys %}
+            <h2>{{ journey.title }}</h2>
+            <p>{{ journey.description }}</p>
+        {% endfor %}
+    </section>
+</body>
+</html>
